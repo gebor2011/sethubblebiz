@@ -14,7 +14,6 @@
             --text-gray: #a0a0a0;
             --border-color: #262626;
             --danger: #e74c3c;
-            --success: #2ecc71;
         }
 
         * {
@@ -100,11 +99,13 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
 
-        .video-wrapper iframe, .video-wrapper video {
+        .video-wrapper video {
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: none;
+            top: 0; 
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
         }
 
         .gold-btn {
@@ -283,13 +284,15 @@
                 Оцифруйте сарафанное радио за 15 минут. Вы сами назначаете размер вознаграждения за рекомендацию и платите только тогда, когда реальные деньги от клиента уже поступили в вашу кассу.
             </p>
 
-           <div class="video-wrapper">
-    <video controls playsinline preload="metadata" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-        <source src="sethubble.mp4" type="video/mp4">
-           </video>
-</div>
+            <div class="video-wrapper">
+                <video controls playsinline preload="metadata">
+                    <source src="sethubble.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+
             <div>
-                <a href="https://t.me/boris_gebor"_blank" class="gold-btn">Подключить бизнес за 15 минут</a>
+                <a href="https://t.me/boris_gebor" target="_blank" class="gold-btn">Подключить бизнес за 15 минут</a>
             </div>
         </div>
     </section>
@@ -297,63 +300,60 @@
     <!-- МОДУЛЬ 2: Сравнение -->
     <section class="comparison">
         <div class="container">
-            <h2>Почему платить за результат выгоднее, чем за клики</h2>
+            <h2>Почему платить за результат выгоднее, чем сливать бюджет</h2>
             <div class="compare-grid">
                 <div class="compare-card card-bad">
-                    <h3 style="color: var(--danger);">Привычная реклама</h3>
+                    <h3>Привычная реклама</h3>
                     <ul class="compare-list">
-                        <li>100% предоплата до прихода первого покупателя</li>
-                        <li>Риск слить рекламный бюджет без единой продажи</li>
-                        <li>Постоянная зависимость от ставок и алгоритмов</li>
-                        <li>Сложная настройка аналитики и поиск надежных подрядчиков</li>
+                        <li>Оплата вперед до получения первого клиента</li>
+                        <li>Риск слить бюджет на тесты без гарантии продаж</li>
+                        <li>Сложная аналитика и зависимость от подрядчиков</li>
                     </ul>
                 </div>
                 <div class="compare-card card-good">
-                    <h3 style="color: var(--gold);">Сарафанное радио на SetHubble</h3>
+                    <h3>Сарафанное радио через SetHubble</h3>
                     <ul class="compare-list">
-                        <li>0 ₽ предоплаты за привлечение трафика</li>
-                        <li>Вы сами фиксируете процент или сумму выплаты с чека</li>
-                        <li>Агенты и довольные клиенты лично рекомендуют вас</li>
-                        <li>Платформа автоматически учитывает каждую транзакцию</li>
+                        <li>0 ₽ предоплаты за привлечение клиентов</li>
+                        <li>Вы сами определяете комфортный % от чека</li>
+                        <li>Партнеры рекомендуют вас за честный бонус</li>
+                        <li>Платформа фиксирует каждую покупку автоматически</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- МОДУЛЬ 3: 3 шага к запуску -->
+    <!-- МОДУЛЬ 3: Шаги -->
     <section class="steps-section">
         <div class="container">
-            <h2>Запуск без программистов и сложных интеграций</h2>
+            <h2>Запуск системы за 3 простых шага</h2>
             <div class="steps-grid">
                 <div class="step-box">
-                    <div class="step-num">Шаг 1</div>
-                    <h4>Быстрая настройка</h4>
-                    <p>Создается профиль вашей компании и фиксируется комфортный процент от чека за рекомендацию. Занимает до 10 минут.</p>
+                    <div class="step-num">Шаг 01</div>
+                    <h4>Регистрация и оффер</h4>
+                    <p>Создаете карточку компании в SetHubble и задаете размер вознаграждения за клиента.</p>
                 </div>
                 <div class="step-box">
-                    <div class="step-num">Шаг 2</div>
-                    <h4>Ссылки и QR-коды</h4>
-                    <p>Клиенты и партнеры получают персональные ссылки, а офлайн-точки — готовые QR-коды для кассы и входной зоны.</p>
+                    <div class="step-num">Шаг 02</div>
+                    <h4>Выдача ссылок</h4>
+                    <p>Клиенты и партнеры получают персональные ссылки, а для офлайн-точек генерируются QR-коды.</p>
                 </div>
                 <div class="step-box">
-                    <div class="step-num">Шаг 3</div>
-                    <h4>Выплата за результат</h4>
-                    <p>Клиент оплачивает товар или услугу. Вы проводите чек в системе, а сервис автоматически начисляет бонус партнеру.</p>
+                    <div class="step-num">Шаг 03</div>
+                    <h4>Оплата по факту</h4>
+                    <p>Сделка проходит через кассу, платформа автоматически начисляет бонус рекомендателю.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- МОДУЛЬ 4: Финальный призыв -->
+    <!-- МОДУЛЬ 4: Финал -->
     <section class="cta-final">
         <div class="container">
             <h2>Готовы протестировать поток клиентов без риска?</h2>
-            <p>
-                Вам не нужно изучать инструкции или перестраивать учет. Мы бесплатно поможем создать профиль, настроить процент и запустить первые ссылки за один короткий диалог.
-            </p>
-            <a href="https://t.me/boris_gebor"_blank" class="gold-btn">Написать в Telegram и подключить</a>
-            <a href="https://sethubble.com" target="_blank" class="secondary-link">Хотите разобраться сами? Прямая регистрация на платформе</a>
+            <p>Вам не нужно разбираться в коде или перестраивать учет. Мы бесплатно поможем зарегистрировать кабинет и настроить систему под ваш бизнес.</p>
+            <a href="https://t.me/boris_gebor" target="_blank" class="gold-btn">Написать в Telegram</a>
+            <a href="https://sethubble.com/ru/p_nxa"_blank" class="secondary-link">Самостоятельно зарегистрироваться на платформе SetHubble</a>
         </div>
     </section>
 
